@@ -40,6 +40,6 @@ Examples in Go like duck typing, pointer on interface, channels, generators
 [goroutine-with-cancel](https://github.com/a-projects/go-examples/tree/main/goroutine-with-cancel)
 
 ## Конкурентность с мьютексами
-В Go при работе с данными предпочтительно использовать каналы, так легче понимать как происходит их движение в программе. Но иногда каналы усложняют код, например когда дело касается состояния экземпляра,вот ту и пригодяться мьютексы.
+В Go при работе с данными предпочтительно использовать каналы. Так легче понять как происходит движение данных в программе. Но иногда каналы усложняют код, например когда дело касается состояния экземпляра. В таком случае и пригодяться мьютексы.
 
 [mutex-in-action](https://github.com/a-projects/go-examples/tree/main/mutex-in-action)
