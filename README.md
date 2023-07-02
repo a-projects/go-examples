@@ -1,7 +1,7 @@
 # go-examples
 Examples in Go like duck typing, pointer on interface, channels, generators
 
-Пример утиной типизации в Go, указателя на интерфейс, работа каналов и блокировок, реализация генератора
+Пример утиной типизации в Go, указателя на интерфейс, работа каналов и мьютексов, реализация генератора
 
 ## Утиная типизация
 Известно, что Go использует «утиную типизацию». На самом деле это «структурная типизация» потому, что происходит во время компиляции, тогда как «утиная типизация» обычно происходит во время выполнения. И работает это так: если у структуры есть набор методов, соответствующих интерфейсу, вы можете использовать данную структуру везде, где нужен этот интерфейс, без явного определения.
@@ -27,7 +27,7 @@ Examples in Go like duck typing, pointer on interface, channels, generators
 
 [goroutine-with-wait](https://github.com/a-projects/go-examples/tree/main/goroutine-with-wait)
 
-#### Передача значений через каналы
+#### Передача данных между горутинами с помощью каналов
 
 [goroutine-with-channel](https://github.com/a-projects/go-examples/tree/main/goroutine-with-channel)
 
@@ -38,3 +38,8 @@ Examples in Go like duck typing, pointer on interface, channels, generators
 #### Прекращение выполнения горутины с помощью функции отмены
 
 [goroutine-with-cancel](https://github.com/a-projects/go-examples/tree/main/goroutine-with-cancel)
+
+## Конкурентность с мьютексами
+В Go при работе с данными предпочтительно использовать каналы, так легче понимать как происходит их движение в программе. Но иногда каналы усложняют код, например когда дело касается состояния экземпляра,вот ту и пригодяться мьютексы.
+
+[mutex-in-action](https://github.com/a-projects/go-examples/tree/main/mutex-in-action)
