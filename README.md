@@ -23,18 +23,18 @@ Examples in Go like duck typing, pointer on interface, channels, generators
 ## Горутины и каналы
 Горутины или go-подпрограммы являются ключевой концепцией в модели конкурнтности Go. По сути в рантайме выполнения Go есть планировщик, который примает решение о выолнении нескольких подпрограмм в рамках одного потока или нескольких потоков ОС. Ключевое же предназдначаение каналов это организация общения между горутинами. В примере продемонстриовано использование горутин с каналами.
 
-### Запуск горутин с ожиданием окончания их выполнения.
+#### Запуск горутин с ожиданием окончания их выполнения
 
-[goroutine-with-wait] (https://github.com/a-projects/go-examples/tree/main/goroutine-with-wait)
+[goroutine-with-wait](https://github.com/a-projects/go-examples/tree/main/goroutine-with-wait)
 
-### Передача значений через каналы.
+#### Передача значений через каналы
 
-[goroutine-with-channel] (https://github.com/a-projects/go-examples/tree/main/goroutine-with-channel)
+[goroutine-with-channel](https://github.com/a-projects/go-examples/tree/main/goroutine-with-channel)
 
-### Передача каналов в виде возвращающего значения функции.
+#### Передача каналов в виде возвращающего значения функции
 
-[function-return-channel] (https://github.com/a-projects/go-examples/tree/main/function-return-channel)
+[function-return-channel](https://github.com/a-projects/go-examples/tree/main/function-return-channel)
 
-### Прекращение выполнения горутины с помощью функции отмены.
+#### Прекращение выполнения горутины с помощью функции отмены
 
-[goroutine-with-cancel] (https://github.com/a-projects/go-examples/tree/main/goroutine-with-cancel)
+[goroutine-with-cancel](https://github.com/a-projects/go-examples/tree/main/goroutine-with-cancel)
