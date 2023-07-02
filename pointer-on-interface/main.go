@@ -37,7 +37,7 @@ func main() {
 }
 
 func training(pet *Pet) {
-	(*pet).Say("myau myau")
+	(*pet).Say("meow")
 }
 
 func reflect(t interface{}) {
