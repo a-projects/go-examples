@@ -6,12 +6,12 @@ import (
 
 func main() {
 	// считывать из канала пока он не будет закрыт
-	for i := range calculate(10) {
+	for i := range enumerate(10) {
 		fmt.Printf("%d ", i)
 	}
 }
 
-func calculate(n int) <-chan int {
+func enumerate(n int) <-chan int {
 	ch := make(chan int)
 	go func() {
 		for i := 0; i < n; i++ {

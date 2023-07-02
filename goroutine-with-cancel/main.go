@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	ch, cancel := calculate(10)
+	ch, cancel := enumerate(10)
 	// cчитывать из канала пока он не будет закрыт
 	for i := range ch {
 		if i > 5 {
@@ -18,7 +18,7 @@ func main() {
 	cancel()
 }
 
-func calculate(n int) (<-chan int, func()) {
+func enumerate(n int) (<-chan int, func()) {
 	// создаём канал
 	ch := make(chan int)
 
