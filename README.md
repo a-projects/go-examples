@@ -10,7 +10,7 @@ Examples in Go like duck typing, pointer on interface, channels, generators
 
 [ducktype-in-action](https://github.com/a-projects/go-examples/tree/main/ducktype-in-action)
 
-## Комозиция, не наследование
+## Композиция, не наследование
 В мире ООП объекты состоят из более мелких объектов, это называется композицией. В Go используют композицию как через встраивание, так и явную. Ниже в примере рассмотрена явная композиция по канонам «банды четырёх».
 
 [composition-basic](https://github.com/a-projects/go-examples/tree/main/composition-basic)
